@@ -7,7 +7,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - env
       - aws --version
-      - docker login --username ourusername --password ourpassword
+      - docker login --username mahendra8899 --password-stdin Vardhan@2233
       - $(aws ecr get-login --no-include-email --region ap-south-1)
       #$(aws ecr get-login --no-include-email $ap-south-1)
       - REPOSITORY_URI=581183533877.dkr.ecr.ap-south-1.amazonaws.com/node-app
